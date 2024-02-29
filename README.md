@@ -2,6 +2,12 @@
 
 A small TypeScript zod utility library for defining data provider interfaces with nice DX
 
+## Installation
+
+```
+npm install zod-data-provider
+```
+
 ## Example usage
 
 Define a set of data methods, like so:
