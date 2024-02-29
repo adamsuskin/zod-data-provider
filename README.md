@@ -63,4 +63,4 @@ entityDataValidator.findEntityByName.input.safeParse(...); // access to input, o
 entityDataValidator.createEntity.input.safeParse(...);
 ```
 
-See the [example](./example) folder for a full example.
+See the [example](./src/example.ts) file for a full example.
