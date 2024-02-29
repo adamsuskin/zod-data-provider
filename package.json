@@ -1,0 +1,42 @@
+{
+  "name": "zod-data-provider",
+  "version": "1.0.0",
+  "description": "A small TypeScript zod utility library for defining data provider interfaces with nice DX",
+  "main": "dist/index.cjs",
+  "exports": {
+    ".": {
+      "import": "./src/index.mjs",
+      "require": "./srcindex.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist/"
+  ],
+  "author": "Adam Suskin",
+  "homepage": "https://github.com/adamsuskin/zod-data-provider.git",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/adamsuskin/zod-data-provider.git"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm,iife"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.2.2"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true
+  }
+}
